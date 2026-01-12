@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.css";
 
 interface Props {
     projectTitle : string;
@@ -7,7 +6,7 @@ interface Props {
     projectLink : string;
 }
 
-const Card = ({ projectTitle, ticker, projectDescription, projectLink }: Props) => {
+function Card({ projectTitle, projectDescription, projectLink }: Props) {
     return (
         <div className="card">
             <h1>{projectTitle}</h1>

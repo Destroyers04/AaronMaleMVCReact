@@ -1,9 +1,9 @@
 import react from "react";
-import Card from "../Card/Card";
+import Card from "./Card";
 
 type Props = {};
 
-const CardList = (props: Props) => {
+function CardList (props: Props) {
     return (
         <div>
             <Card projectTitle="Kayla Bot" projectDescription="A discordbot i coded using python" projectLink="https://github.com/Destroyers04/KaylaBot" />
