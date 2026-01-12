@@ -1,21 +1,13 @@
 import React, { useState, type ChangeEvent, type MouseEvent } from "react";
 
-interface Props { }
+interface Props {
+    onClick: (event: MouseEvent<HTMLButtonElement>) => void;
+    //Searh bar will be empty most of the time
+    search: string | undefined;
+    handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+}
 
-function Search(props: Props) {
-    // Variable to hold the search input
-    const [search, setSearch] = useState<string>("");
-
-    // Function to handle input changes
-    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setSearch(event.target.value);
-        console.log(event);
-    };
-
-    const onClick = (event: MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        console.log(event);
-    };
-
+function Search({onClick, search, handleChange}: Props) {
     return (
         <div>
             <input value={search} onChange={(event) => handleChange(event)}></input>
