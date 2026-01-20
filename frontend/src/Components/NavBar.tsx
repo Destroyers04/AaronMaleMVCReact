@@ -10,10 +10,7 @@ function NavBar(props: Props) {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center space-x-2 underline-effect">
                     <img src={AMLogoBlue} className="h-7 -translate-y-1" alt="Aaron Male Logo" />
-                    <span className=" font-title text-[#0A2463] self-center text-xl font-semibold">Aaron Male</span>
-                </Link>
-                <Link className="font-body text-[#0A2463] text-xl font-semibold underline-effect" to="/about">
-                    About me
+                    <span className=" font-title text-[#0A2463] self-center text-xl font-semibold">Home</span>
                 </Link>
             </div>
         </nav>
