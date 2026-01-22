@@ -3,21 +3,22 @@ import React from "react";
 interface Props {
     technologyName : string;
     technologyLogo : string;
-    color : string;
 }
 
-function Card({ technologyName, technologyLogo, color }: Props) {
+function Card({ technologyName, technologyLogo }: Props) {
     return (
-        <div className="rounded-sm p-2 border-1 border-gray-500 shadow-md" style={{ backgroundColor: color }}>
-            <h1 className="font-title font-semibold text-xs flex items-center gap-2">
-                <span>
-                    <img className="h-15" src={technologyLogo} alt="Icon for technology" />
-                </span>
+        <div className="bg-[#BDE8F5] flex flex-col px-2 py-1 rounded-sm shadow-lg animate-pulse">
+            <img
+                className="h-5 w-auto flex-shrink-0"
+                src={technologyLogo}
+                alt={`${technologyName} logo`}
+            />
+            <h1 className="font-title font-medium text-xs text-center">
                 {technologyName}
             </h1>
         </div>
-
     );
 }
+
 
 export default Card;

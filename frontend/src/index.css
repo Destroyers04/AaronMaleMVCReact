@@ -4,6 +4,12 @@
 @theme {
     --font-title: "Montserrat", "sans-serif";
     --font-body: "Open Sans", "open-sans", "sans-serif";
+
+    @keyframes pulse {
+        50% {
+            opacity: 0.8;
+        }
+    }
 }
 
 @layer components {
