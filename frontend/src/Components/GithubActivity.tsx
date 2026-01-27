@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { fetchDataApi } from "../api";
+import { fetchDataApi, type GithubEvent } from "../api";
 import HweiBackground from '../assets/img/Hwei.png';
 
 function GithubActivity() {
-    //.newestEvent.actor.avatarurl 
-    const [event, setEvent] = useState(null);
+    const [event, setEvent] = useState<GithubEvent | null>(null);
+
     const getDaysAgo = (dateString: string): string => {
         const eventDate = new Date(dateString);
         const now = new Date();
@@ -15,11 +15,12 @@ function GithubActivity() {
         if (diffDays === 1) return "Yesterday";
         return `${diffDays} days ago`;
     };
+
     useEffect(() => {
         const fetchEvents = async () => {
-            const result = await fetchDataApi();
-            const pushEvents = result.data.filter(event => event.type === "PushEvent");
-            setEvent(pushEvents[0]);
+            const events = await fetchDataApi();
+            const pushEvents = events.filter(e => e.type === "PushEvent");
+            setEvent(pushEvents[0] || null);
         };
         fetchEvents();
     }, []);

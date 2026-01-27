@@ -1,11 +1,8 @@
-import React from "react";
 import Hero from "../Components/Hero";
 import Bio from "../Components/Bio";
 import GithubActivity from "../Components/GithubActivity";
 
-interface Props { }
-
-function HomePage(props: Props) {
+function HomePage() {
     return (
         <div>
             <Hero />

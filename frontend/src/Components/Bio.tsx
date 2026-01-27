@@ -1,8 +1,4 @@
-import React from "react";
-
-interface Props {}
-
-function Bio(props: Props) {
+function Bio() {
     return (
         <div className="w-full bg-white">
             <div className="mx-8 lg:mx-70 text-sm font-body">

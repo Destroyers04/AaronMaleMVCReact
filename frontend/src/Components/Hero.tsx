@@ -1,13 +1,8 @@
-import React from "react";
 import ProfilePicture from '../assets/img/ProfilePicture.svg';
-import LocationIcon from '../assets/img/LocationIcon.svg';
-import CodeIcon from '../assets/img/CodeIcon.svg';
-import CalendarIcon from '../assets/img/CalendarIcon.svg';
 import CardList from "./CardList";
-import KaylaBackground from '../assets/img/kayla.png';
-interface Props { }
+import KaylaBackground from '../assets/img/Kayla.png';
 
-function Hero(props: Props) {
+function Hero() {
 
     return (
         <div className="pt-15 font-title ">

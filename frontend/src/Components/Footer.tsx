@@ -1,11 +1,8 @@
-import React from "react";
 import PhoneIcon from '../assets/img/PhoneIcon.svg';
 import EmailIcon from '../assets/img/EmailIcon.svg';
 import AMLogoWhite from '../assets/img/am-logo-white.svg';
 
-interface Props { }
-
-function Footer(props: Props) {
+function Footer() {
 
     return (
         <footer className=" bg-[#0A2463] text-white font-body">

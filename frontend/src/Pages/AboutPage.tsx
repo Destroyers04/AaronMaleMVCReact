@@ -1,8 +1,4 @@
-import React from "react";
-
-interface Props { }
-
-function AboutPage(props: Props) {
+function AboutPage() {
     return <div>AboutPage</div>;
 };
 

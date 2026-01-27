@@ -1,9 +1,7 @@
-import React from "react";
 import AMLogoBlue from '../assets/img/am-logo-blue.svg';
 import { Link } from "react-router-dom";
-interface Props { }
 
-function NavBar(props: Props) {
+function NavBar() {
 
     return (
         <nav className="fixed bg-white w-full z-40 top-0 start-0 -b bg-gray-600 px-4">
