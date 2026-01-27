@@ -4,8 +4,8 @@ interface Props {}
 
 function Bio(props: Props) {
     return (
-        <div className="w-full max-w-screen-xl mx-auto bg-white">
-            <div className=" m-8 text-sm font-body">
+        <div className="w-full bg-white">
+            <div className="mx-8 lg:mx-70 text-sm font-body">
                 <p>&gt; I am a Software developer with a Bachelor's degree in Information Science from the University of Bergen.</p>
                 <br />
                 <p>&gt; I have experience with Python, building projects including a machine learning predictor for bycatch and a Discord bot.</p>

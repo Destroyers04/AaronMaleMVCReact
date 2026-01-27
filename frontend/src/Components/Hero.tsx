@@ -4,22 +4,26 @@ import LocationIcon from '../assets/img/LocationIcon.svg';
 import CodeIcon from '../assets/img/CodeIcon.svg';
 import CalendarIcon from '../assets/img/CalendarIcon.svg';
 import CardList from "./CardList";
+import KaylaBackground from '../assets/img/kayla.png';
 interface Props { }
 
 function Hero(props: Props) {
 
     return (
-        <div className="pt-20 font-title">
-            <div className="grid grid-cols-5 grid-rows-2" >
+        <div className="pt-15 font-title ">
+            <div className="my-8 grid grid-cols-5 grid-rows-2" >
 
-                <div className=" bg-[#BDE8F5] col-span-2 row-span-2 place-content-center rounded-br-2xl">
-                    <img src={ProfilePicture} className="h-50 mx-auto
-" />
+                <div className=" bg-[#BDE8F5] col-span-2 row-span-2 place-content-center rounded-br-2xl relative">
+                    <div
+                        className="absolute inset-0 rounded-br-2xl opacity-20"
+                        style={{ backgroundImage: `url(${KaylaBackground})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                    />
+                    <img src={ProfilePicture} className="h-50 mx-auto relative z-10" />
                 </div>
 
                 <div className=" bg-[#BDE8F5] col-span-3 -mb-3">
-                    <p className="text-[#0A2463] text-xl font-semibold  mb-2 pt-2">Aaron Ezra Male</p>
-                    <div className="">
+                    <p className="text-[#0A2463] text-xl font-semibold  mb-2 pt- ml-4">Aaron Ezra Male</p>
+                    <div className="ml-6">
                         <p className="font-semibold">
                             &gt;
                             <span className="font-medium text-sm">  23 Years Old</span>

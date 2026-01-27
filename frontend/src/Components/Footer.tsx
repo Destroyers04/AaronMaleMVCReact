@@ -8,8 +8,8 @@ interface Props { }
 function Footer(props: Props) {
 
     return (
-        <footer className="w-full bg-[#0A2463] text-white font-body">
-            <div className="max-w-screen-xl mx-auto px-4 py-4">
+        <footer className=" bg-[#0A2463] text-white font-body">
+            <div className="px-4 py-4">
                 <div className="flex flex-col items-center justify-between gap-4">
 
                     <div className="flex items-center space-x-3">
@@ -20,7 +20,7 @@ function Footer(props: Props) {
                         </div>
                     </div>
 
-                    <div className="flex flex-row items-center font-body gap-8">
+                    <div className="flex flex-col items-center font-body gap-2">
                         <div className="flex items-center gap-2">
                             <img src={PhoneIcon} className="h-5 w-5" alt="Phone icon" />
                             <span className="text-sm">+47 979 12 321</span>
