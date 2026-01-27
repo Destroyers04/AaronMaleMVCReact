@@ -44,7 +44,7 @@ function GithubActivity() {
                         <div className=" ml-8 text-sm md:text-base">
                             <h2 className="font-title font-semibold ">{getDaysAgo(event.created_at)}</h2>
                             <a href={`https://github.com/${event.repo.name}`}>
-                                <p className="mt-2 ml-4 md:ml-8 md:mt-4">Pushed commits to {event.repo.name}</p>
+                                <p className="mt-2 md:ml-8 md:mt-4">Pushed commits to {event.repo.name}</p>
                             </a>
                         </div>
                     </div>
