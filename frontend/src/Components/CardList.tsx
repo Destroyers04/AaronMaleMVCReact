@@ -1,9 +1,9 @@
 import Card from "./Card";
-import PythonLogo from "../Assets/img/PythonLogo.svg";
-import TypescriptLogo from "../Assets/img/typescript-logo.svg";
-import ReactLogo from "../Assets/img/react-logo.svg";
-import TailwindLogo from "../Assets/img/tailwind-logo.svg";
-import VueLogo from "../Assets/img/vue-logo.svg";
+import PythonLogo from "../assets/img/PythonLogo.svg";
+import TypescriptLogo from "../assets/img/typescript-logo.svg";
+import ReactLogo from "../assets/img/react-logo.svg";
+import TailwindLogo from "../assets/img/tailwind-logo.svg";
+import VueLogo from "../assets/img/vue-logo.svg";
 
 function CardList() {
     return (
