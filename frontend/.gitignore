@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 .vs/
+.vercel
+
+# Worlds bingo: local database and the player codes (secrets, never commit)
+bingo.db*
+scripts/players.json

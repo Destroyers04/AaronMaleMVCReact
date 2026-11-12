@@ -1,0 +1,32 @@
+{
+  "bestOf": 5,
+  "teams": [
+    {
+      "id": "blg",
+      "name": "Bilibili Gaming",
+      "short": "BLG",
+      "logo": "/bingo/teams/blg.webp",
+      "players": [
+        { "id": "bin", "name": "Bin", "role": "Top", "image": "/bingo/players/BLG_Bin.webp" },
+        { "id": "flandre", "name": "Flandre", "role": "Top", "image": "/bingo/players/BLG_Flandre.webp" },
+        { "id": "xun", "name": "Xun", "role": "Jungle", "image": "/bingo/players/BLG_Xun.webp" },
+        { "id": "knight", "name": "Knight", "role": "Mid", "image": "/bingo/players/BLG_Knight.webp" },
+        { "id": "viper", "name": "Viper", "role": "ADC", "image": "/bingo/players/BLG_Viper.webp" },
+        { "id": "on", "name": "ON", "role": "Support", "image": "/bingo/players/BLG_ON.webp" }
+      ]
+    },
+    {
+      "id": "geng",
+      "name": "Gen.G",
+      "short": "GEN",
+      "logo": "/bingo/teams/geng.png",
+      "players": [
+        { "id": "kiin", "name": "Kiin", "role": "Top", "image": "/bingo/players/GEN_Kiin.webp" },
+        { "id": "canyon", "name": "Canyon", "role": "Jungle", "image": "/bingo/players/GEN_Canyon.webp" },
+        { "id": "chovy", "name": "Chovy", "role": "Mid", "image": "/bingo/players/GEN_Chovy.webp" },
+        { "id": "ruler", "name": "Ruler", "role": "ADC", "image": "/bingo/players/GEN_Ruler.webp" },
+        { "id": "duro", "name": "Duro", "role": "Support", "image": "/bingo/players/GEN_Duro.webp" }
+      ]
+    }
+  ]
+}

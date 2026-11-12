@@ -21,15 +21,19 @@ function Hero() {
                     <div className="ml-6">
                         <p className="font-semibold">
                             &gt;
-                            <span className="font-medium text-sm">  23 Years Old</span>
+                            <span className="font-medium text-sm">  24 Years Old</span>
                         </p>
                         <p className="font-semibold">
                             &gt;
-                            <span className="font-medium text-sm">  Based in Molde, Norway</span>
+                            <span className="font-medium text-sm">  Based in Trondheim, Norway</span>
                         </p>
                         <p className="font-semibold">
                             &gt;
-                            <span className="font-medium text-sm"> Full stack developer </span>
+                            <span className="font-medium text-sm"> Graduate Software Engineer </span>
+                        </p>
+                        <p className="font-semibold">
+                            &gt;
+                            <span className="font-medium text-sm"> Working at Tieto </span>
                         </p>
                         <div className="h-5 flex-shrink-0"></div>
                     </div>

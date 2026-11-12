@@ -13,7 +13,7 @@ function Footer() {
                         <img src={AMLogoWhite} className="h-8" alt="Aaron Male Logo" />
                         <div className="font-title">
                             <p className="text-lg font-semibold">Aaron Ezra Male</p>
-                            <p className="text-sm text-gray-300">Full Stack Developer</p>
+                            <p className="text-sm text-gray-300">Graduate Software Engineer</p>
                         </div>
                     </div>
 

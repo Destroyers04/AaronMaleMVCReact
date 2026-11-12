@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 @import "tailwindcss";
+@import "tw-animate-css";
 
 @theme {
     --font-title: "Montserrat", "sans-serif";
@@ -13,6 +14,67 @@
             background-color: rgb(189 232 245 / 0.6);
         }
     }
+}
+
+/* shadcn colors. The values only exist inside .bingo-theme, so the rest of the site is untouched */
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+}
+
+@theme {
+    --animate-caret-blink: caret-blink 1.25s ease-out infinite;
+    --animate-shake: shake 0.4s ease-in-out;
+
+    @keyframes caret-blink {
+        0%, 70%, 100% { opacity: 1; }
+        20%, 50% { opacity: 0; }
+    }
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        20%, 60% { transform: translateX(-6px); }
+        40%, 80% { transform: translateX(6px); }
+    }
+}
+
+/* Worlds bingo: faint blue background, navy text, orange highlights */
+.bingo-theme {
+    --background: #F2FAFD;
+    --foreground: #0A2463;
+    --card: #FFFFFF;
+    --card-foreground: #0A2463;
+    --primary: #DF8B4D;
+    --primary-foreground: #0A2463;
+    --secondary: #BDE8F5;
+    --secondary-foreground: #0A2463;
+    --muted: #E5F3F9;
+    --muted-foreground: #4B5D7E;
+    --accent: #FBE8DA;
+    --accent-foreground: #0A2463;
+    --destructive: #DC2626;
+    --border: #D2E6EE;
+    --input: #BFD8E3;
+    --ring: #DF8B4D;
+}
+
+/* Mostly used on phones: no double-tap zoom or grey tap flash when tapping fast */
+.bingo-theme button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @layer components {
